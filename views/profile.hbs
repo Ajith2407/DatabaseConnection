@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   {{>header}}
+<body>
+    {{>navbar}} <div class="button_alter">
+        <button class ="inform1" onclick="calling()">Enrollment </button>
+        <button class="inform2" onclick="verify()">verification</button> </div>
+
+        <div class="alignment">
+        <div id="tableshow1">
+        <table border=1>
+<tbody>
+  <tr> 
+<th>customer id</th>
+<th>Unique id</th>
+<th>_status</th>
+<th>flag</th>
+<th>voice_file_path</th> </tr>
+{{#each dataEnrollment}}
+<tr> 
+         <td>{{customer_id}}</td> 
+          <td>{{Uniquid_id}}</td>
+         <td>{{_status}}</td> 
+         <td>{{flag}}</td> 
+          <td>{{Voice_file_path}}</td>
+       </tr>  
+        {{/each}}
+        </tbody>
+  </table>
+</div>
+<div id="tableshow2">
+  <table border=1>
+<tbody>
+  <tr> 
+<th>customer id</th>
+<th>Unique id</th>
+<th>branch_name</th>
+<th>_status</th>
+<th>flag</th>
+<th>success_ratio</th>
+<th>voice_file_path</th> 
+<th>date_</th>
+<th>Time_</th></tr>
+
+{{#each dataEnrollment1}}
+<tr> 
+         <td>{{customer_id}}</td> 
+          <td>{{Uniquid_id}}</td>
+          <td>{{branch_name}}</td>
+         <td>{{_status}}</td> 
+         <td>{{flag}}</td> 
+         <td>{{success_ratio}}</td> 
+          <td>{{Voice_file_path}}</td>
+         <td>{{Date_}}</td> 
+         <td>{{Time_}}</td> 
+
+       </tr>  
+        {{/each}}
+        </tbody>
+  </table>
+  </div>
+
+  </div>
+ 
+    
+<script type="text/javascript">
+var enroll = document.getElementById("tableshow1");
+var verification = document.getElementById("tableshow2"); 
+    function calling(){
+        enroll.style.display="block";
+        verification.style.display="none";
+}
+function verify(){
+        enroll.style.display="none";
+        verification.style.display="block";
+        }
+
+
+</script>
+</body>
+</html>

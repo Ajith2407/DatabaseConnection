@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Fredericka+the+Great&family=Rubik&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    width:100%;
+    height:100vh;
+    background: burlywood;
+    font-family: 'Rubik', sans-serif;
+}
+.container,.container-fluid{
+    position :absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display:block;
+    background:white;
+    width: 350px;
+    padding: 25px;
+    box-shadow: inset 0 0 10px;
+
+}
+.container .text{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(6, 132, 235);
+
+}
+.container form{
+    margin-top: -20px;
+}
+.container form .data{
+    height:45px;
+    width: 100%;
+    margin:40px 0;
+}
+form .data label{
+    font-size: 18px;
+}
+form .data input{
+    height:100%;
+    width:100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border:2px solid silver;
+    
+}
+form .forget-pass{
+    margin-top: 10px;
+}
+form .forget-pass a{
+    color:rgb(6, 132, 235);
+    text-decoration: none;
+}
+form .forget-pass a:hover{
+    text-decoration:underline;
+}
+form .btn{
+    margin:30px 0;
+    height:45px;
+    background: grey;
+    width: 100%;
+}
+form .btn button{
+    height: 100%;
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    background:#5199E4;
+    font-size:18px;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor:pointer;
+    
+}
+form .signup-Link{
+    text-align: center;
+}
+form .signup-Link a{
+    color:rgb(6, 132, 235);
+
+}
+nav{
+    width:100%;
+    height: 50px ;
+    background-color: orange;
+    padding:0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu a {
+    text-decoration: none;
+    padding: 0px 7px;
+    color: #5199E4;
+    font-size: 18px;
+
+}
+nav .menu a:hover {
+text-decoration: underline;
+}
+
+.container-fluid h2{
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid img{
+    width: 299px;
+    height:395px;
+}
+ #tableshow2{
+    display: none;
+ }
+ .inform1 , .inform2{
+
+    width: 134px;
+    height:50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px;
+   
+ }
+ .button_alter,.alignment{
+    display: flex;
+  
+    justify-content: center;
+ }
